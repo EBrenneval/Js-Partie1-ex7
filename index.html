@@ -8,12 +8,12 @@
         <form>
             <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
             <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
-            <button id="valider" onclick="alert(calcul());" name="valider">Valider</button>
+            <button id="valider" onclick="alert(calcul());" name="valider">Valider</button> <!--le alert permet d'afficher le resultat retouné par la fction-->
         </form>
 
 
         <script>
-        function calcul(){
+        function calcul(){ // creation de la fction
   var foot = document.getElementById("pointure").value;
   var years = document.getElementById("annee").value;
   var result = foot*2;
@@ -21,7 +21,7 @@
   result = result *50;
   result = result - years;
   result = result +1766;
-  return result;
+  return result;// pour retourner le resultat
 }
 
         </script>
